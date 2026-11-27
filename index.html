@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="referrer" content="no-referrer">
+
+    <meta http-equiv="Content-Security-Policy"
+    content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'">
+
+    <title>Password Strength Analyzer</title>
+
+    <link rel="stylesheet" href="static/style.css">
+
+    <script src="static/script.js" defer></script>
+
+</head>
+
+<body>
+
+    <main class="container">
+
+        <div class="card">
+
+            <h1>Password Strength Analyzer</h1>
+
+            <p class="subtitle">
+                Check your password strength instantly.
+            </p>
+
+            <div class="privacy">
+                Your password is analyzed locally in your browser.
+                It is not sent to any server or external API.
+            </div>
+
+            <label for="password">Enter Password</label>
+
+            <div class="password-box">
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter any password"
+                    autocomplete="off"
+                    autocapitalize="off"
+                    spellcheck="false"
+                >
+
+                <button type="button" id="togglePassword">
+                    Show
+                </button>
+
+            </div>
+
+            <div class="buttons">
+
+                <button type="button" id="analyzeBtn">
+                    Analyze Password
+                </button>
+
+                <button type="button" id="clearBtn" class="clear">
+                    Clear
+                </button>
+
+            </div>
+
+            <section id="result" hidden>
+
+                <h2>Password Strength</h2>
+
+                <h3 id="strengthText">-</h3>
+
+                <div class="progress-background">
+                    <div id="progress"></div>
+                </div>
+
+                <h3>Analysis</h3>
+
+                <ul id="analysisList"></ul>
+
+                <h3>Suggestions</h3>
+
+                <ul id="suggestionList"></ul>
+
+                <p class="disclaimer">
+                    This is an estimated strength result.
+                    It does not guarantee complete security.
+                </p>
+
+            </section>
+
+        </div>
+
+    </main>
+
+</body>
+</html>
