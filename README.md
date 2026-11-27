@@ -2,10 +2,10 @@
 A browser-based password strength analyzer using HTML, CSS and JavaScript.
 
 ## Intern Details
-Intern ID: CIS383
-Organization: CODTECH IT SOLUTIONS PRIVATE LIMITED
-Internship Domain: Cyber Security & Ethical Hacking
-Internship Duration: 4 Weeks
+1. Intern ID: CIS383
+2. Organization: CODTECH IT SOLUTIONS PRIVATE LIMITED
+3. Internship Domain: Cyber Security & Ethical Hacking
+4. Internship Duration: 4 Weeks
 
 ## Technologies Used
 1. HTML
